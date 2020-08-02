@@ -1,2 +1,1 @@
-# dotnetnotts-blog
-blog site for .NET Notts
+# .NET Notts Blog
