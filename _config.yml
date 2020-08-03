@@ -35,7 +35,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Google analytics
-ga_tracking_id: "UA-130637122-2"
+ga_tracking_id: "UA-174348681-1"
 
 # Category descriptions (for archive pages)
 descriptions:
