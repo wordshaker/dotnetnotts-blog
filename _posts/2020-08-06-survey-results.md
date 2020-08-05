@@ -43,7 +43,7 @@ As you can see from the above, the preference was for shorter talks. In 2021, we
 
 ## Start time
 
-The current meetup starts at 18.00. Again, as the pandemic has lead to peoples routines changing, some want to have dinner or a break before the meetup starts.
+As the pandemic has lead to peoples routines changing, some want to have dinner or a break before the meetup starts. We want to see if altering the start time would help some attendees.
 
 <br/>
 <img src="/assets/posts/2020-08-06/start-bar.png" alt="alttext" width="100%"/>
@@ -52,7 +52,7 @@ The current meetup starts at 18.00. Again, as the pandemic has lead to peoples r
 </center>
 <br/>
 
-Based on the results shown above, we will be moving the event to start at 18.30. Our reasoning is that those who can make 18.00 are more likely to be able to make the later time, but those who can make the later time may struggle with the earlier one. 
+Based on the results shown above, we will be starting each event at 18.30. Our reasoning is that those who can make 18.00 are more likely to be able to make the later time, but those who can make the later time may struggle with the earlier one. 
 
 <br/>
 
@@ -79,7 +79,7 @@ We'll also make efforts to continue getting talks in the areas of projects and O
 
 This short survey has given us a lot of insights into what we can try in the near future with .NET Notts. It's understood that we won't be able to fit everyone's needs, but hopefully this will benefit the majority.
 
-The meetup start times will change as of the next event, starting at 18.30. From here on out we are going to aim to have two 30 minute slots each meetup and in the future to look at some activities and networking we can introduce every now and then. 
+The meetup start times will continue to start at 18.30. From here on out we are going to aim to have two 30 minute slots each meetup and in the future to look at some activities and networking we can introduce every now and then. 
 
 Lastly, while keeping the .NET focus, we'll see if we can get talks in the areas programming, testing, core skills and cloud.
 

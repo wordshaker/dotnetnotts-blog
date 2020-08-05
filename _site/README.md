@@ -4,7 +4,9 @@
 
 ## Building
 
-Run `jekyll serve` to run locally on localhost:4000
+- [Follow the instruction to set up Jekyll on your machine](https://jekyllrb.com/docs/)
+
+- Run `jekyll serve` to run locally on localhost:4000
 
 ## Branding
 
