@@ -10,10 +10,10 @@
 
 ## Branding
 
-![Branding](/assets/branding.png)
+![.NET Notts Branding](https://res.cloudinary.com/dsfcrod4r/image/upload/v1598552467/branding_ydno1a.png)
 
 Primary Colour: #05bd9e
 
 Secondary Colour: #fffff
 
-Font: Calibri
+Font: Bahnschrift
