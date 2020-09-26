@@ -19,34 +19,33 @@ jobs:
         gem install bundler
         bundle install --jobs 4 --retry 3
         bundle exec jekyll build
+    - name: Upgrade Pip
+      run: sudo pip install --upgrade pip
 
-      - name: Upgrade Pip
-        run: sudo pip install --upgrade pip
+    - name: Install AWS CLI
+      run: pip install --user awscli
 
-      - name: Install AWS CLI
-        run: pip install --user awscli
+    - name: Configure AWS
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+      run: |
+        aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
+        aws configure set aws_secret_access_key "$AWS_SECRET_KEY"
+        aws configure set region eu-west-2
+        aws configure set output json
 
-      - name: Configure AWS
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-        run: |
-          aws configure set aws_access_key_id "$AWS_ACCESS_KEY_ID"
-          aws configure set aws_secret_access_key "$AWS_SECRET_KEY"
-          aws configure set region eu-west-2
-          aws configure set output json
+    - name: Deploy To S3
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+      run: |
+        aws s3 sync ./_site/ s3://blog.dotnetnotts.co.uk/  --delete
 
-      - name: Deploy To S3
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-        run: |
-          aws s3 sync ./_site/ s3://blog.dotnetnotts.co.uk/  --delete
-
-      - name: Invalidate Cache
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
-          DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID}}
-        run: |
-          aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths "/*"
+    - name: Invalidate Cache
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_KEY }}
+        DISTRIBUTION_ID: ${{ secrets.DISTRIBUTION_ID}}
+      run: |
+        aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths "/*"
