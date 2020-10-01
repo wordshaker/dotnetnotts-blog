@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Meetup Survey Results
-description: "Asking our community about what they think"
+description: "In order to guide the future organisation of the .NET Notts meetup, we asked the community questions around start times, length of talks and talk topics. This post walks through the results and the final decisions made from them."
 date: 2020-08-03
 cover: "/assets/header-image.png"
 author: Jessica White

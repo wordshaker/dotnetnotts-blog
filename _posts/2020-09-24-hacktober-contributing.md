@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Contributing to the .NET Notts Repositories
-description: "How to contribute to the .NET Notts repositories both during Hacktoberfest and going forward."
+description: "Do you want to take part in Hacktoberfest? Or want some guidance on how to contribute to Open Source Repositories? This post outlines how to contribute to the .NET Notts repositories, and other repositories, both during Hacktoberfest and going forward."
 date: 2020-09-24
 cover: "/assets/header-image.png"
 author: Jessica White
