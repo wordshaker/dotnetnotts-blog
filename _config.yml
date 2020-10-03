@@ -12,8 +12,8 @@ title: .NET Notts - Blog
 name: .NET Notts
 description:  >
   The Blog of the .NET Notts Meetup
-baseurl: "http://blog.dotnetnotts.co.uk/" 
-url: "http://blog.dotnetnotts.co.uk/" 
+baseurl: "" 
+url: "" 
 cover: "/assets/header-image.png"
 logo: "/assets/logo.png"
 
