@@ -1,1 +1,1 @@
-Sitemap: http://blog.dotnetnotts.co.uk/sitemap.xml
+Sitemap: /sitemap.xml
