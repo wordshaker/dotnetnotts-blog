@@ -33,6 +33,8 @@ This blog contains a short summary of the presenters and their talks, plus usefu
 
 #### [Here is a link to the YouTube recording of this event](https://www.youtube.com/watch?v=S7aI6JYLhkI)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kJNW8tNuk4U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <br/>
 
 ## About Martin Beeby
