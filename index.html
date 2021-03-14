@@ -12,9 +12,10 @@ layout: default
   </div>
 </div>
 
-<!--<div class="center-buttons">
-  <a class="button" href="/category/dotnetnotts/index.html" >Behind The Scenes</a>
-</div>-->
+<div class="center-buttons">
+  <a class="button" href="/category/past-talks/" >Past Talks</a>
+  <a class="button" href="/category/organisation/" >Other</a>
+</div>
 
 <div class="wrapper">
 <ul class="post-list">
@@ -23,8 +24,8 @@ layout: default
     <h2>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
     </h2>
-    <section class="post-excerpt" itemprop="description">
-      <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+    <section class="post-excerpt" itemprop="description">	
+      <p>{{ post.description }}</p>	
     </section>
     <section class="post-meta">
       <div class="post-date">{{ post.date | date: "%B %-d, %Y" }}</div>
